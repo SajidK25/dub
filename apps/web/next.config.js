@@ -11,6 +11,7 @@ const { withAxiom } = require("next-axiom");
 
 /** @type {import('next').NextConfig} */
 module.exports = withAxiom({
+  staticPageGenerationTimeout: 1000,
   reactStrictMode: false,
   transpilePackages: ["shiki"],
   experimental: {
